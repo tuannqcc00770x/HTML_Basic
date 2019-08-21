@@ -1,0 +1,156 @@
+/* COMMON */
+*{
+	box-sizing: border-box;
+  }
+  body{
+	margin: 0;
+	font-family: Tahoma;
+  }
+  .container{
+	max-width: 1170px;
+	margin: auto;
+  }
+  .row:after{
+	content: '';
+	display: block;
+	clear: both;
+  }
+  .col{
+	width: 33.3333%;
+	float: left;
+	min-height: 1px;
+	padding: 1em;
+  }
+  img{
+	width: 100%;
+	display: block;
+  }
+  /* END COMMON */
+  
+  /* MENU START */
+  ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  .menu{
+	padding: 0 1em;
+  }
+  .menu li{
+	display: inline-block;
+  }
+  .menu a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #333;
+	display: block;
+	padding: 1em;
+  }
+  .left{
+	float: left;
+  }
+  .right{
+	float: right;
+  }
+  /* MENU END */
+  
+  /* BANNER START */
+  .banner{
+	position: relative;
+  }
+  .intro{
+	position: absolute;
+	top: 25%;
+	color: #fff;
+	left: 2em;
+  }
+  /* BANNER END */
+  
+  /* CONTENT START */
+  .pt-2{
+	padding-top: 2em;
+  }
+  .content{
+	background-color: #ccc;
+	padding: 1em;
+  }
+  .info{
+	padding: 0 1em;
+  }
+  /* CONTENT END */
+  
+  
+  /* FOOTER START */
+  .footer{
+	background-color: #eee;
+	padding: 0 1em 1em; 
+  }
+  .footer a{
+	text-decoration: none;
+	color: dodgerblue;
+  }
+  /* FOOTER END */
+  
+  /* RESPONSIVE */
+  @media (max-width: 991px){
+	.menu{
+	  background-color: #004D40;
+	}
+	.menu a{
+	  color: #fff;
+	  padding: 2em 1em;
+	}
+	.banner img{
+	  display: none;
+	}
+	.intro{
+	  position: relative;
+	  color: #333;
+	  left: 0;
+	  border-bottom: 1px solid #666;
+	  margin: 0 2em;
+	  padding-bottom: 2em;
+	}
+	.col{
+	  width: 50%;
+	}
+	.footer .col{
+	  width: 100%;
+	}
+	.content,
+	.footer{
+	  background-color: #fff;
+	}
+  }
+  
+  @media (max-width: 767px){
+	.left{
+	  width: 40%;
+	}
+	.right{
+	  width: 60%;
+	}
+	ul{
+	  font-size: 0;
+	}
+	.menu a{
+	  font-size: 13px;
+	}
+	.left li{
+	  width: 50%;
+	}
+	.right li{
+	  width: 33.3333%;
+	}
+	body{
+	  font-size: 13px;
+	}
+	.intro{
+	  border-bottom: 0;
+	  padding-bottom: 0;
+	}
+	.col{
+	  width: 100%;
+	}
+  }
+  /* END RESPONSIVE */
